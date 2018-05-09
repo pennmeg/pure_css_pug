@@ -1,9 +1,12 @@
+// Variables
 $navy: #323299;
 $dk-navy: #14143D;
 $cream: #fffdd0;
 $brown: #614c3a;
 $dk-brown: #17120e;
-
+$border: solid 1px $dk-brown;
+$leg: polygon(100% 0, 0 0, 50% 100%);
+// Extensions
 %pug-body {
   position: absolute;
   background-color: $cream;
@@ -22,7 +25,14 @@ $dk-brown: #17120e;
   height: 30%;
   bottom: 38%;
 }
-
+%pug-brow {
+  position: absolute;
+  width: 2%;
+  top: 44%;
+  border: 2px solid $dk-brown;
+  border-radius: 50%;
+}
+// Application Set Up
 body {
   background-color: $navy;
   p {
@@ -40,6 +50,7 @@ body {
   width: 600px;
   height: 420px;
 }
+// Pug Head
 #pugHead {
   @extend %pug-body;
   width: 38%;
@@ -47,7 +58,7 @@ body {
   top: 40%;
   left: 18%;
   border-radius: 45% 45% 30% 30%;
-  border: 1px solid $dk-brown;
+  border: $border;
   #nose {
     position: absolute;
     width: 25%;
@@ -78,28 +89,21 @@ body {
     left: 28%;
   }
   #browL {
-    position: absolute;
-    width: 2%;
-    top: 44%;
+    @extend %pug-brow;
     left: 31%;
-    border: 2px solid $dk-brown;
     transform: rotate(345deg);
-    border-radius: 50%;
   }
   #eyeR {
     @extend %pug-eye;
     right: 22%;
   }
   #browR {
-    position: absolute;
-    width: 2%;
-    top: 44%;
+    @extend %pug-brow;
     right: 25%;
-    border: 2px solid $dk-brown;
     transform: rotate(15deg);
-    border-radius: 50%;
   }
 }
+// Pug Body
 #pugBody {
   @extend %pug-body;
   height: 38%;
@@ -107,132 +111,69 @@ body {
   top: 70%;
   left: 9%;
   border-radius: 45% 28% 25% 25%;
-  border: 1px solid $dk-brown;
+  border: $border;
   z-index: -1;
-  #roll-1 {
-    @extend %pug-body;
+  .roll {
     width: 3%;
     height: 10%;
+    border-radius: 60% 60% 0% 0%;
+    border-left: $border;
+  }
+  #roll-1 {
     left: 18%;
     top: 5%;
-    border-radius: 60% 60% 0% 0%;
-    border-left: 1px solid $dk-brown;
   }
   #roll-2 {
-    @extend %pug-body;
-    width: 3%;
-    height: 10%;
     left: 14.7%;
     top: 8%;
-    border-radius: 60% 60% 0% 0%;
-    border-left: 1px solid $dk-brown;
   }
   #roll-3 {
-    @extend %pug-body;
-    width: 3%;
-    height: 10%;
     left: 11%;
     top: 12%;
-    border-radius: 60% 60% 0% 0%;
-    border-left: 1px solid $dk-brown;
   }
-  #tail {
-    @extend %pug-body;
+  #tail, #tail-copy {
     width: 4%;
     height: 20%;
     bottom: 30%;
+  }
+  #tail {
     left: -5%;
     transform: rotate(310deg);
     border-top-left-radius: 100%;
-    border: 1px solid $dk-brown;
-    z-index: -1;
+    border: $border;
   }
   #tail-copy {
-    @extend %pug-body;
-    width: 4%;
-    height: 20%;
-    bottom: 30%;
     left: -0.3%;
-    border-left: 1px solid $dk-brown;
+    border-left: $border;
+  }
+  .leg {
+    height: 10%;
+    width: 10%;
+    clip-path: $leg;
+    -webkit-clip-path: $leg;
+    background-color: $dk-brown;
   }
   #backRleg {
-    position: absolute;
-    height: 10%;
-    width: 10%;
     bottom: -5%;
     left: 20%;
-    background-color: $dk-brown;
-    -webkit-clip-path: polygon(100% 0, 0 0, 50% 100%);
-    clip-path: polygon(100% 0, 0 0, 50% 100%);
-    #backRleg-copy {
-      position: absolute;
-      height: 95%;
-      width: 90%;
-      bottom: 5%;
-      right: 6%;
-      background-color: $cream;
-      -webkit-clip-path: polygon(100% 0, 0 0, 50% 100%);
-      clip-path: polygon(100% 0, 0 0, 50% 100%);
-    }
   }
+
   #backLleg {
-    position: absolute;
-    height: 10%;
-    width: 10%;
     bottom: -5%;
     left: 25%;
-    background-color: $dk-brown;
-    -webkit-clip-path: polygon(100% 0, 0 0, 50% 100%);
-    clip-path: polygon(100% 0, 0 0, 50% 100%);
-    #backLleg-copy {
-      position: absolute;
-      height: 95%;
-      width: 90%;
-      bottom: 5%;
-      right: 6%;
-      background-color: $cream;
-      -webkit-clip-path: polygon(100% 0, 0 0, 50% 100%);
-      clip-path: polygon(100% 0, 0 0, 50% 100%);
-    }
   }
   #frontRleg {
-    position: absolute;
-    height: 10%;
-    width: 10%;
     bottom: -5%;
     right: 15%;
-    background-color: $dk-brown;
-    -webkit-clip-path: polygon(100% 0, 0 0, 50% 100%);
-    clip-path: polygon(100% 0, 0 0, 50% 100%);
-    #frontRleg-copy {
-      position: absolute;
-      height: 95%;
-      width: 90%;
-      bottom: 5%;
-      right: 6%;
-      background-color: $cream;
-      -webkit-clip-path: polygon(100% 0, 0 0, 50% 100%);
-      clip-path: polygon(100% 0, 0 0, 50% 100%);
-    }
   }
   #frontLleg {
-    position: absolute;
-    height: 10%;
-    width: 10%;
     bottom: -4%;
     right: 8%;
-    background-color: $dk-brown;
-    -webkit-clip-path: polygon(100% 0, 0 0, 50% 100%);
-    clip-path: polygon(100% 0, 0 0, 50% 100%);
-    #frontLleg-copy {
-      position: absolute;
-      height: 95%;
-      width: 90%;
-      bottom: 5%;
-      right: 6%;
-      background-color: $cream;
-      -webkit-clip-path: polygon(100% 0, 0 0, 50% 100%);
-      clip-path: polygon(100% 0, 0 0, 50% 100%);
-    }
+  }
+  #backRleg-copy, #backLleg-copy, #frontLleg-copy, #frontRleg-copy {
+    height: 95%;
+    width: 90%;
+    bottom: 5%;
+    right: 6%;
   }
 }
