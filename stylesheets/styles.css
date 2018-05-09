@@ -2,6 +2,20 @@
   position: absolute;
   background-color: #fffdd0; }
 
+#pugHead #eyeL, #pugHead #eyeR {
+  position: absolute;
+  width: 8%;
+  height: 10%;
+  top: 48%;
+  background-color: #17120e;
+  border-radius: 50%; }
+
+#pugHead #nose #mouthL, #pugHead #nose #mouthR {
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  bottom: 30%; }
+
 body {
   background-color: #323299; }
 
@@ -22,12 +36,44 @@ body {
   border: 1px solid #17120e; }
   #pugHead #nose {
     position: absolute;
-    width: 30%;
+    width: 25%;
     height: 25%;
     top: 48%;
-    left: 35%;
+    left: 40%;
     background-color: #614c3a;
-    border-radius: 38%; }
+    border-radius: 60% 60% 38% 38%; }
+    #pugHead #nose #mouthL {
+      left: 22%;
+      transform: rotate(60deg);
+      border-right: 4px solid #17120e;
+      border-bottom-right-radius: 60%;
+      border-top-right-radius: 80%; }
+    #pugHead #nose #mouthR {
+      left: 45%;
+      transform: rotate(300deg);
+      border-left: 4px solid #17120e;
+      border-bottom-left-radius: 60%;
+      border-top-left-radius: 80%; }
+  #pugHead #eyeL {
+    left: 28%; }
+  #pugHead #browL {
+    position: absolute;
+    width: 2%;
+    top: 44%;
+    left: 31%;
+    border: 2px solid #17120e;
+    transform: rotate(345deg);
+    border-radius: 50%; }
+  #pugHead #eyeR {
+    right: 22%; }
+  #pugHead #browR {
+    position: absolute;
+    width: 2%;
+    top: 44%;
+    right: 25%;
+    border: 2px solid #17120e;
+    transform: rotate(15deg);
+    border-radius: 50%; }
 
 #pugBody {
   height: 40%;

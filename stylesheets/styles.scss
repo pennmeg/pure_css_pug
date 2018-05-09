@@ -2,9 +2,24 @@ $navy: #323299;
 $cream: #fffdd0;
 $brown: #614c3a;
 $dk-brown: #17120e;
+
 %pug-body {
   position: absolute;
   background-color: $cream;
+}
+%pug-eye {
+  position: absolute;
+  width: 8%;
+  height: 10%;
+  top: 48%;
+  background-color: $dk-brown;
+  border-radius: 50%;
+}
+%pug-mouth {
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  bottom: 30%;
 }
 
 body {
@@ -28,13 +43,57 @@ body {
   border: 1px solid $dk-brown;
   #nose {
     position: absolute;
-    width: 30%;
+    width: 25%;
     height: 25%;
     top: 48%;
-    left: 35%;
+    left: 40%;
     background-color: $brown;
-    border-radius: 38%;
+    border-radius: 60% 60% 38% 38%;
+
+    #mouthL {
+      @extend %pug-mouth;
+      left: 22%;
+      transform: rotate(60deg);
+      border-right: 4px solid $dk-brown;
+      border-bottom-right-radius: 60%;
+      border-top-right-radius: 80%;
+    }
+    #mouthR {
+      @extend %pug-mouth;
+      left: 45%;
+      transform: rotate(300deg);
+      border-left: 4px solid $dk-brown;
+      border-bottom-left-radius: 60%;
+      border-top-left-radius: 80%;
+    }
   }
+  #eyeL {
+    @extend %pug-eye;
+    left: 28%;
+  }
+  #browL {
+    position: absolute;
+    width: 2%;
+    top: 44%;
+    left: 31%;
+    border: 2px solid $dk-brown;
+    transform: rotate(345deg);
+    border-radius: 50%;
+  }
+  #eyeR {
+    @extend %pug-eye;
+    right: 22%;
+  }
+  #browR {
+    position: absolute;
+    width: 2%;
+    top: 44%;
+    right: 25%;
+    border: 2px solid $dk-brown;
+    transform: rotate(15deg);
+    border-radius: 50%;
+  }
+
 }
 #pugBody {
   @extend %pug-body;
