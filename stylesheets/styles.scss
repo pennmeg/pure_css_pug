@@ -1,4 +1,5 @@
 $navy: #323299;
+$dk-navy: #14143D;
 $cream: #fffdd0;
 $brown: #614c3a;
 $dk-brown: #17120e;
@@ -19,11 +20,17 @@ $dk-brown: #17120e;
   position: absolute;
   width: 30%;
   height: 30%;
-  bottom: 30%;
+  bottom: 38%;
 }
 
 body {
   background-color: $navy;
+  p {
+    font-family: 'Titan One', cursive;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: $dk-navy;
+  }
 }
 #box {
   position: relative;
@@ -49,7 +56,6 @@ body {
     left: 40%;
     background-color: $brown;
     border-radius: 60% 60% 38% 38%;
-
     #mouthL {
       @extend %pug-mouth;
       left: 22%;
@@ -60,7 +66,7 @@ body {
     }
     #mouthR {
       @extend %pug-mouth;
-      left: 45%;
+      left: 44%;
       transform: rotate(300deg);
       border-left: 4px solid $dk-brown;
       border-bottom-left-radius: 60%;
@@ -93,15 +99,41 @@ body {
     transform: rotate(15deg);
     border-radius: 50%;
   }
-
 }
 #pugBody {
   @extend %pug-body;
-  height: 40%;
-  width: 55%;
+  height: 38%;
+  width: 45%;
   top: 70%;
-  left: 0%;
-  border-radius: 45% 25% 25% 25%;
+  left: 9%;
+  border-radius: 45% 28% 25% 25%;
   border: 1px solid $dk-brown;
   z-index: -1;
+  #roll-1 {
+    @extend %pug-body;
+    width: 3%;
+    height: 10%;
+    left: 18%;
+    top: 5%;
+    border-radius: 60% 60% 0% 0%;
+    border-left: 1px solid $dk-brown;
+  }
+  #roll-2 {
+    @extend %pug-body;
+    width: 3%;
+    height: 10%;
+    left: 14.7%;
+    top: 8%;
+    border-radius: 60% 60% 0% 0%;
+    border-left: 1px solid $dk-brown;
+  }
+  #roll-3 {
+    @extend %pug-body;
+    width: 3%;
+    height: 10%;
+    left: 11%;
+    top: 12%;
+    border-radius: 60% 60% 0% 0%;
+    border-left: 1px solid $dk-brown;
+  }
 }

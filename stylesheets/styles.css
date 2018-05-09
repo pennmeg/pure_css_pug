@@ -1,4 +1,4 @@
-#pugHead, #pugBody {
+#pugHead, #pugBody, #pugBody #roll-1, #pugBody #roll-2, #pugBody #roll-3 {
   position: absolute;
   background-color: #fffdd0; }
 
@@ -14,10 +14,15 @@
   position: absolute;
   width: 30%;
   height: 30%;
-  bottom: 30%; }
+  bottom: 38%; }
 
 body {
   background-color: #323299; }
+  body p {
+    font-family: 'Titan One', cursive;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #14143D; }
 
 #box {
   position: relative;
@@ -49,7 +54,7 @@ body {
       border-bottom-right-radius: 60%;
       border-top-right-radius: 80%; }
     #pugHead #nose #mouthR {
-      left: 45%;
+      left: 44%;
       transform: rotate(300deg);
       border-left: 4px solid #17120e;
       border-bottom-left-radius: 60%;
@@ -76,12 +81,33 @@ body {
     border-radius: 50%; }
 
 #pugBody {
-  height: 40%;
-  width: 55%;
+  height: 38%;
+  width: 45%;
   top: 70%;
-  left: 0%;
-  border-radius: 45% 25% 25% 25%;
+  left: 9%;
+  border-radius: 45% 28% 25% 25%;
   border: 1px solid #17120e;
   z-index: -1; }
+  #pugBody #roll-1 {
+    width: 3%;
+    height: 10%;
+    left: 18%;
+    top: 5%;
+    border-radius: 60% 60% 0% 0%;
+    border-left: 1px solid #17120e; }
+  #pugBody #roll-2 {
+    width: 3%;
+    height: 10%;
+    left: 14.7%;
+    top: 8%;
+    border-radius: 60% 60% 0% 0%;
+    border-left: 1px solid #17120e; }
+  #pugBody #roll-3 {
+    width: 3%;
+    height: 10%;
+    left: 11%;
+    top: 12%;
+    border-radius: 60% 60% 0% 0%;
+    border-left: 1px solid #17120e; }
 
 /*# sourceMappingURL=styles.css.map */
