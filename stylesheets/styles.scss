@@ -150,15 +150,15 @@ body {
   }
   .leg {
     @extend %pug-body;
-    height: 10%;
-    width: 10%;
+    height: 7%;
+    width: 7%;
     background-color: $dk-brown;
     clip-path: $leg;
     -webkit-clip-path: $leg;
   }
   #backRleg {
     bottom: -5%;
-    left: 20%;
+    left: 20.5%;
   }
   #backLleg {
     bottom: -5%;
@@ -169,16 +169,24 @@ body {
     right: 15%;
   }
   #frontLleg {
-    bottom: -4%;
-    right: 8%;
+    bottom: -3%;
+    right: 9%;
+    transform: rotate(347deg);
   }
   .leg-copy {
     @extend %pug-body;
-    height: 95%;
+    height: 99%;
     width: 90%;
-    bottom: 5%;
+    bottom: 15%;
     right: 6%;
     clip-path: $leg;
     -webkit-clip-path: $leg;
+  }
+  #leg-cover {
+    @extend %pug-body;
+    width: 63%;
+    height: 8%;
+    left: 20%;
+    bottom: 0.8%;
   }
 }
