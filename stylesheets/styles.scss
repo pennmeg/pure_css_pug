@@ -1,3 +1,48 @@
+$navy: #323299;
+$cream: #fffdd0;
+$brown: #614c3a;
+$dk-brown: #17120e;
+%pug-body {
+  position: absolute;
+  background-color: $cream;
+}
+
 body {
-  background-color: blue;
+  background-color: $navy;
+}
+#box {
+  position: relative;
+  margin: auto;
+  margin-top: 200px;
+  display: block;
+  width: 600px;
+  height: 420px;
+}
+#pugHead {
+  @extend %pug-body;
+  width: 38%;
+  height: 40%;
+  top: 40%;
+  left: 18%;
+  border-radius: 45% 45% 30% 30%;
+  border: 1px solid $dk-brown;
+  #nose {
+    position: absolute;
+    width: 30%;
+    height: 25%;
+    top: 48%;
+    left: 35%;
+    background-color: $brown;
+    border-radius: 38%;
+  }
+}
+#pugBody {
+  @extend %pug-body;
+  height: 40%;
+  width: 55%;
+  top: 70%;
+  left: 0%;
+  border-radius: 45% 25% 25% 25%;
+  border: 1px solid $dk-brown;
+  z-index: -1;
 }
