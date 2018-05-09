@@ -1,4 +1,4 @@
-#pugHead, #pugBody, #pugBody #roll-1, #pugBody #roll-2, #pugBody #roll-3 {
+#pugHead, #pugBody, #pugBody #roll-1, #pugBody #roll-2, #pugBody #roll-3, #pugBody #tail, #pugBody #tail-copy {
   position: absolute;
   background-color: #fffdd0; }
 
@@ -109,5 +109,92 @@ body {
     top: 12%;
     border-radius: 60% 60% 0% 0%;
     border-left: 1px solid #17120e; }
+  #pugBody #tail {
+    width: 4%;
+    height: 20%;
+    bottom: 30%;
+    left: -5%;
+    transform: rotate(310deg);
+    border-top-left-radius: 100%;
+    border: 1px solid #17120e;
+    z-index: -1; }
+  #pugBody #tail-copy {
+    width: 4%;
+    height: 20%;
+    bottom: 30%;
+    left: -0.3%;
+    border-left: 1px solid #17120e; }
+  #pugBody #backRleg {
+    position: absolute;
+    height: 10%;
+    width: 10%;
+    bottom: -5%;
+    left: 20%;
+    background-color: #17120e;
+    -webkit-clip-path: polygon(100% 0, 0 0, 50% 100%);
+    clip-path: polygon(100% 0, 0 0, 50% 100%); }
+    #pugBody #backRleg #backRleg-copy {
+      position: absolute;
+      height: 95%;
+      width: 90%;
+      bottom: 5%;
+      right: 6%;
+      background-color: #fffdd0;
+      -webkit-clip-path: polygon(100% 0, 0 0, 50% 100%);
+      clip-path: polygon(100% 0, 0 0, 50% 100%); }
+  #pugBody #backLleg {
+    position: absolute;
+    height: 10%;
+    width: 10%;
+    bottom: -5%;
+    left: 25%;
+    background-color: #17120e;
+    -webkit-clip-path: polygon(100% 0, 0 0, 50% 100%);
+    clip-path: polygon(100% 0, 0 0, 50% 100%); }
+    #pugBody #backLleg #backLleg-copy {
+      position: absolute;
+      height: 95%;
+      width: 90%;
+      bottom: 5%;
+      right: 6%;
+      background-color: #fffdd0;
+      -webkit-clip-path: polygon(100% 0, 0 0, 50% 100%);
+      clip-path: polygon(100% 0, 0 0, 50% 100%); }
+  #pugBody #frontRleg {
+    position: absolute;
+    height: 10%;
+    width: 10%;
+    bottom: -5%;
+    right: 15%;
+    background-color: #17120e;
+    -webkit-clip-path: polygon(100% 0, 0 0, 50% 100%);
+    clip-path: polygon(100% 0, 0 0, 50% 100%); }
+    #pugBody #frontRleg #frontRleg-copy {
+      position: absolute;
+      height: 95%;
+      width: 90%;
+      bottom: 5%;
+      right: 6%;
+      background-color: #fffdd0;
+      -webkit-clip-path: polygon(100% 0, 0 0, 50% 100%);
+      clip-path: polygon(100% 0, 0 0, 50% 100%); }
+  #pugBody #frontLleg {
+    position: absolute;
+    height: 10%;
+    width: 10%;
+    bottom: -4%;
+    right: 8%;
+    background-color: #17120e;
+    -webkit-clip-path: polygon(100% 0, 0 0, 50% 100%);
+    clip-path: polygon(100% 0, 0 0, 50% 100%); }
+    #pugBody #frontLleg #frontLleg-copy {
+      position: absolute;
+      height: 95%;
+      width: 90%;
+      bottom: 5%;
+      right: 6%;
+      background-color: #fffdd0;
+      -webkit-clip-path: polygon(100% 0, 0 0, 50% 100%);
+      clip-path: polygon(100% 0, 0 0, 50% 100%); }
 
 /*# sourceMappingURL=styles.css.map */

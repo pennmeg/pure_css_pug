@@ -136,4 +136,103 @@ body {
     border-radius: 60% 60% 0% 0%;
     border-left: 1px solid $dk-brown;
   }
+  #tail {
+    @extend %pug-body;
+    width: 4%;
+    height: 20%;
+    bottom: 30%;
+    left: -5%;
+    transform: rotate(310deg);
+    border-top-left-radius: 100%;
+    border: 1px solid $dk-brown;
+    z-index: -1;
+  }
+  #tail-copy {
+    @extend %pug-body;
+    width: 4%;
+    height: 20%;
+    bottom: 30%;
+    left: -0.3%;
+    border-left: 1px solid $dk-brown;
+  }
+  #backRleg {
+    position: absolute;
+    height: 10%;
+    width: 10%;
+    bottom: -5%;
+    left: 20%;
+    background-color: $dk-brown;
+    -webkit-clip-path: polygon(100% 0, 0 0, 50% 100%);
+    clip-path: polygon(100% 0, 0 0, 50% 100%);
+    #backRleg-copy {
+      position: absolute;
+      height: 95%;
+      width: 90%;
+      bottom: 5%;
+      right: 6%;
+      background-color: $cream;
+      -webkit-clip-path: polygon(100% 0, 0 0, 50% 100%);
+      clip-path: polygon(100% 0, 0 0, 50% 100%);
+    }
+  }
+  #backLleg {
+    position: absolute;
+    height: 10%;
+    width: 10%;
+    bottom: -5%;
+    left: 25%;
+    background-color: $dk-brown;
+    -webkit-clip-path: polygon(100% 0, 0 0, 50% 100%);
+    clip-path: polygon(100% 0, 0 0, 50% 100%);
+    #backLleg-copy {
+      position: absolute;
+      height: 95%;
+      width: 90%;
+      bottom: 5%;
+      right: 6%;
+      background-color: $cream;
+      -webkit-clip-path: polygon(100% 0, 0 0, 50% 100%);
+      clip-path: polygon(100% 0, 0 0, 50% 100%);
+    }
+  }
+  #frontRleg {
+    position: absolute;
+    height: 10%;
+    width: 10%;
+    bottom: -5%;
+    right: 15%;
+    background-color: $dk-brown;
+    -webkit-clip-path: polygon(100% 0, 0 0, 50% 100%);
+    clip-path: polygon(100% 0, 0 0, 50% 100%);
+    #frontRleg-copy {
+      position: absolute;
+      height: 95%;
+      width: 90%;
+      bottom: 5%;
+      right: 6%;
+      background-color: $cream;
+      -webkit-clip-path: polygon(100% 0, 0 0, 50% 100%);
+      clip-path: polygon(100% 0, 0 0, 50% 100%);
+    }
+  }
+  #frontLleg {
+    position: absolute;
+    height: 10%;
+    width: 10%;
+    bottom: -4%;
+    right: 8%;
+    background-color: $dk-brown;
+    -webkit-clip-path: polygon(100% 0, 0 0, 50% 100%);
+    clip-path: polygon(100% 0, 0 0, 50% 100%);
+    #frontLleg-copy {
+      position: absolute;
+      height: 95%;
+      width: 90%;
+      bottom: 5%;
+      right: 6%;
+      background-color: $cream;
+      -webkit-clip-path: polygon(100% 0, 0 0, 50% 100%);
+      clip-path: polygon(100% 0, 0 0, 50% 100%);
+    }
+  }
 }
