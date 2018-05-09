@@ -1,6 +1,6 @@
-##Images Using Pure CSS
+## Images Using Pure CSS
 
-#Day 3
+# Day 3
 Part of a monthly goal to create one pure CSS image a day for the remainder of May 2018 (began 5/7/18)
 
 Other Pure CSS Images
