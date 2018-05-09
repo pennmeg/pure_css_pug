@@ -23,6 +23,13 @@
   border: 2px solid #17120e;
   border-radius: 50%; }
 
+#pugHead #earL, #pugHead #earR {
+  position: absolute;
+  width: 18%;
+  height: 35%;
+  top: 12%;
+  background-color: #17120e; }
+
 body {
   background-color: #323299; }
   body p {
@@ -76,6 +83,12 @@ body {
   #pugHead #browR {
     right: 25%;
     transform: rotate(15deg); }
+  #pugHead #earL {
+    left: -3%;
+    border-radius: 60% 20% 60% 60%; }
+  #pugHead #earR {
+    right: -3%;
+    border-radius: 20% 60% 60% 60%; }
 
 #pugBody {
   height: 38%;

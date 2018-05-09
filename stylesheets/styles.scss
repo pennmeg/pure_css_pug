@@ -32,6 +32,13 @@ $leg: polygon(100% 0, 0 0, 50% 100%);
   border: 2px solid $dk-brown;
   border-radius: 50%;
 }
+%pug-ear {
+  position: absolute;
+  width: 18%;
+  height: 35%;
+  top: 12%;
+  background-color: $dk-brown;
+}
 // Application Set Up
 body {
   background-color: $navy;
@@ -101,6 +108,16 @@ body {
     @extend %pug-brow;
     right: 25%;
     transform: rotate(15deg);
+  }
+  #earL {
+    @extend %pug-ear;
+    left: -3%;
+    border-radius: 60% 20% 60% 60%;
+  }
+  #earR {
+    @extend %pug-ear;
+    right: -3%;
+    border-radius: 20% 60% 60% 60%;
   }
 }
 // Pug Body
