@@ -150,19 +150,9 @@ body {
   }
   .leg {
     @extend %pug-body;
-    clip-path: $leg;
-    -webkit-clip-path: $leg;
-    background-color: $dk-brown;
     height: 10%;
     width: 10%;
-
-  }
-  .leg-copy {
-    @extend %pug-body;
-    height: 95%;
-    width: 90%;
-    bottom: 5%;
-    right: 6%;
+    background-color: $dk-brown;
     clip-path: $leg;
     -webkit-clip-path: $leg;
   }
@@ -181,5 +171,14 @@ body {
   #frontLleg {
     bottom: -4%;
     right: 8%;
+  }
+  .leg-copy {
+    @extend %pug-body;
+    height: 95%;
+    width: 90%;
+    bottom: 5%;
+    right: 6%;
+    clip-path: $leg;
+    -webkit-clip-path: $leg;
   }
 }
