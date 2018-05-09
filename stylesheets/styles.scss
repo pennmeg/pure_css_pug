@@ -114,6 +114,7 @@ body {
   border: $border;
   z-index: -1;
   .roll {
+    @extend %pug-body;
     width: 3%;
     height: 10%;
     border-radius: 60% 60% 0% 0%;
@@ -132,6 +133,7 @@ body {
     top: 12%;
   }
   #tail, #tail-copy {
+    @extend %pug-body;
     width: 4%;
     height: 20%;
     bottom: 30%;
@@ -147,17 +149,27 @@ body {
     border-left: $border;
   }
   .leg {
-    height: 10%;
-    width: 10%;
+    @extend %pug-body;
     clip-path: $leg;
     -webkit-clip-path: $leg;
     background-color: $dk-brown;
+    height: 10%;
+    width: 10%;
+
+  }
+  .leg-copy {
+    @extend %pug-body;
+    height: 95%;
+    width: 90%;
+    bottom: 5%;
+    right: 6%;
+    clip-path: $leg;
+    -webkit-clip-path: $leg;
   }
   #backRleg {
     bottom: -5%;
     left: 20%;
   }
-
   #backLleg {
     bottom: -5%;
     left: 25%;
@@ -169,11 +181,5 @@ body {
   #frontLleg {
     bottom: -4%;
     right: 8%;
-  }
-  #backRleg-copy, #backLleg-copy, #frontLleg-copy, #frontRleg-copy {
-    height: 95%;
-    width: 90%;
-    bottom: 5%;
-    right: 6%;
   }
 }
