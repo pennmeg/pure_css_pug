@@ -1,6 +1,6 @@
 # Pure CSS Challenge: Pug
 
-!(Pure CSS Pug)[pure_css_pug.jpg]
+![Pure CSS Pug](pure_css_pug.jpg)
 
 *May 9, 2018* | Practicing SCSS/SASS, as well as trying to reduce DRY CSS code now that I am getting the hang of using CSS in this way.
 
